@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +12,61 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  background: #1d1414;
+  color: snow;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.content {
+  max-width: 1050px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin: 30px 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  background: #d7d7d7;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+.row {
+  display: flex;
+  background: #d7d7d7;
+  border-radius: 4px;
+  border: 1px solid #23a6d5;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+  margin: 20px 0;
+  width: 95%;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+
+img {
+  width: 8%;
+  min-width: 50px;
+  border-radius: 5px;
+  background: #020509;
+  cursor: pointer;
+  padding: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+img:hover {
+  background: #b89f29;
 }
